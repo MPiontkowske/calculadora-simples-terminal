@@ -1,26 +1,5 @@
 import streamlit as st
-
-def add(num1, num2):
-    return num1 + num2
-
-def subtract(num1, num2):
-    return num1 - num2
-
-def multiply(num1, num2):
-    return num1 * num2
-
-def divide(num1, num2):
-    if num2 == 0:
-        raise ValueError('Divisão por zero não é permitida!')
-    return num1 / num2
-
-def power(num1, num2):
-    return num1 ** num2
-
-def sqrt(num):
-    if num < 0:
-        raise ValueError('Não é possível calcular a raiz quadrada de um número negativo!')
-    return num ** 0.5
+from calculator import add, subtract, multiply, divide, power, sqrt
 
 st.title('Calculadora Simples')
 
@@ -51,4 +30,4 @@ else:
             resultado = operacoes[opcao](num1, num2)
             st.success(f'Resultado: {resultado}')
         except Exception as e:
-            st.error(str(e))
+            st.error(str(e)) 
