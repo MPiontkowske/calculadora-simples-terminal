@@ -44,8 +44,8 @@ if opcao == 'Raiz quadrada (√)':
         except Exception as e:
             st.error(str(e))
 else:
-    num1 = st.number_input('Digite o primeiro número:', key='num1', format='%f')
-    num2 = st.number_input('Digite o segundo número:', key='num2', format='%f')
+    num1 = st.number_input('Digite o primeiro número :', key='num1', format='%f')
+    num2 = st.number_input('Digite o segundo número :', key='num2', format='%f')
     if st.button('Calcular'):
         try:
             resultado = operacoes[opcao](num1, num2)
