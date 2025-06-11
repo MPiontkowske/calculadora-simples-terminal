@@ -18,7 +18,7 @@ def print_menu():
     print("\n" + "="*30 + "\n")
 
 def calculator():
-    init()  # Inicializa o colorama
+    init()  # Inicializa o Colorama
     while True:
         print_menu()
         
